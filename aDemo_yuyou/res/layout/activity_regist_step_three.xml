@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/ic_login_bg"
+    android:orientation="vertical" >
+
+    <include layout="@layout/include_title_account" />
+
+    <TextView
+        style="@style/tv_title_white_style"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="33.0dip"
+        android:gravity="center_horizontal"
+        android:text="请输入密码" />
+
+   <com.callhh.android.clearedittext.widget.ClearEditText
+        android:id="@+id/et_register_step_three_password_input"
+        style="@style/Account.EditText.Line"
+        android:layout_marginLeft="@dimen/login_common_side_margin"
+        android:layout_marginRight="@dimen/login_common_side_margin"
+        android:layout_marginTop="25.0dip"
+        android:hint="6-18位字母数字或符号组合"
+        android:inputType="textPassword"
+        app:iconClear="@drawable/icon_password_delete"
+        android:maxLength="30" />
+
+    <TextView
+        android:id="@+id/tv_register_step_three_password_hint"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/login_common_side_margin"
+        android:layout_marginRight="@dimen/login_common_side_margin"
+        android:layout_marginTop="12.0dip"
+        android:text="密码必须是6-18位字母数字或符号组合"
+        android:textColor="@color/white_50"
+        android:textSize="@dimen/text_size_xsmall"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/btn_register_step_three_submit"
+        style="@style/btn_orange"
+        android:background="#ff6815"
+        android:layout_marginLeft="@dimen/login_common_side_margin"
+        android:layout_marginRight="@dimen/login_common_side_margin"
+        android:layout_marginTop="15.0dip"
+        android:enabled="true"
+        android:textColor="#ffffff"
+        android:text="@string/register" />
+
+</LinearLayout>

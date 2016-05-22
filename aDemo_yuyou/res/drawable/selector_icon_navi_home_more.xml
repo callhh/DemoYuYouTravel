@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/icon_navi_home_more_pressed" android:state_pressed="true" android:state_selected="false"/>
+    <item android:drawable="@drawable/icon_navi_home_more_rest" android:state_pressed="false" android:state_selected="false"/>
+    <item android:drawable="@drawable/icon_more" android:state_selected="true"/>
+
+</selector>

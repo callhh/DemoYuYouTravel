@@ -1,0 +1,207 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.sample.AboutYuYouActivity" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="#F2F4F7" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/layout_setting_back"
+            android:text="关于鱼游旅游"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <RelativeLayout
+            android:id="@+id/layout_setting_back"
+            android:layout_width="42dp"
+            android:layout_height="52dp" >
+
+            <ImageView
+                android:id="@+id/img_weishequ_back"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/selector_navi_back" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/img_about_yuyou_share"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="12dp"
+            android:src="@drawable/selector_icon_navi_detail_share" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/relativeLayout1" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30.0dip"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/icon_abouttongcheng_common" />
+
+                <TextView
+                    style="@style/tv_info_secondary_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10.0dip"
+                    android:text="同程旅游客户端Android版本" />
+
+                <TextView
+                    android:id="@+id/tv_version"
+                    style="@style/tv_info_secondary_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6.0dip"
+                    android:src="@drawable/icon"
+                    android:text="版本号5.0" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_third"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16.0dip"
+                android:orientation="vertical"
+                android:visibility="visible" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_twoline_common"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:id="@+id/ll_more_update"
+                        android:layout_width="fill_parent"
+                        android:layout_height="48.0dip"
+                        android:background="@drawable/selector_cell_left_blank"
+                        android:clickable="true"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingLeft="16.0dip" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:text="检查更新"
+                            android:textSize="15sp" />
+
+                        <ImageView
+                            android:id="@+id/img_xin"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="5.0dip"
+                            android:src="@drawable/icon_red_dot"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:id="@+id/tv_version_hint"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10.0dip"
+                            android:layout_marginRight="16.0dip"
+                            android:drawablePadding="12.0dip"
+                            android:drawableRight="@drawable/arrow_list_common_right"
+                            android:gravity="center|right"
+                            android:singleLine="true"
+                            android:text="已是最新版本"
+                            android:textColor="@color/linegray"
+                            android:textColorHint="@color/linegray"
+                            android:textSize="13.0sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_more_firstintro"
+                        android:layout_width="fill_parent"
+                        android:layout_height="48.0dip"
+                        android:background="@drawable/selector_cell_left_blank"
+                        android:clickable="true"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:paddingLeft="16.0dip"
+                            android:text="新功能介绍"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10.0dip"
+                            android:layout_marginRight="16.0dip"
+                            android:drawablePadding="12.0dip"
+                            android:drawableRight="@drawable/arrow_list_common_right"
+                            android:gravity="right"
+                            android:singleLine="true"
+                            android:textColor="@color/green"
+                            android:textSize="15.0sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_gytc"
+                        android:layout_width="fill_parent"
+                        android:layout_height="48.0dip"
+                        android:background="@drawable/selector_cell_pressed"
+                        android:clickable="true"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingLeft="16.0dip" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:text="公司介绍"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10.0dip"
+                            android:layout_marginRight="16.0dip"
+                            android:drawablePadding="12.0dip"
+                            android:drawableRight="@drawable/arrow_list_common_right"
+                            android:gravity="right"
+                            android:singleLine="true"
+                            android:textColor="@color/green"
+                            android:textSize="15.0sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

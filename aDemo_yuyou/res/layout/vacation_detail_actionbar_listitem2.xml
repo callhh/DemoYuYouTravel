@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f5f5f5"
+    android:orientation="vertical"
+    android:padding="4dp" >
+
+    <RelativeLayout
+        android:id="@+id/layout_menu_item_favor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp" >
+
+        <ImageView
+            android:id="@+id/img_menu_item_favor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/icon_indicator_hotel_keyword_administration" />
+
+        <TextView
+            android:id="@+id/tv_menu_item_favor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:layout_toRightOf="@+id/img_menu_item_favor"
+            android:text="我的收藏"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#2ebd59"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+</LinearLayout>

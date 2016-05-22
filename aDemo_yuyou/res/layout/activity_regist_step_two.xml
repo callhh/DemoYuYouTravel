@@ -1,0 +1,116 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_login_bg"
+    tools:context="com.example.ex.RegisterActivity" >
+	<LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" >
+
+       <ImageView
+            android:id="@+id/img_regist_step_two_back_button"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/icon_navi_backwhite_rest" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="130dp"
+            android:text="注册"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+    </LinearLayout>
+	<TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/linearLayout1"
+        android:background="#268e9b"
+        android:text="TextView" />
+	<TextView
+	    android:id="@+id/textView2"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@+id/linearLayout1"
+	    android:layout_centerHorizontal="true"
+	    android:layout_marginTop="30dp"
+	    android:textColor="#ffffff"
+	    android:textSize="18sp"
+	    android:gravity="center"
+	    android:text="验证码已经发送至" />
+
+	<EditText
+	    android:id="@+id/edit_verify_phone"
+	    android:layout_width="match_parent"
+	    android:layout_height="48dp"
+	    android:layout_alignParentLeft="true"
+	    android:layout_below="@+id/textView2"
+	    android:layout_marginLeft="30dp"
+	    android:layout_marginRight="30dp"
+	    android:hint="请输入验证码"
+	    android:layout_marginTop="50dp"
+	    android:inputType="numberPassword" 
+	    style="@style/Account.EditText.Line"/>
+
+		<Button
+		    android:id="@+id/btn_regist_step_two_commit"
+		    android:layout_width="300dp"
+		    android:layout_height="wrap_content"
+		    android:layout_alignLeft="@+id/edit_verify_phone"
+		    android:layout_below="@+id/edit_verify_phone"
+		    android:layout_marginRight="30dp"
+		    android:layout_marginTop="20dp"
+		    android:background="#ff6815"
+		    android:text="提交"
+		    android:textColor="#ffffff" />
+
+		<TextView
+		    android:id="@+id/tv_agrry"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_alignParentLeft="true"
+		    android:layout_below="@+id/btn_regist_step_two_commit"
+		    android:layout_marginLeft="38dp"
+        	android:layout_marginRight="38dp"
+        	android:layout_marginTop="10dp"
+        	android:maxLines="2"
+        	android:ellipsize="end"
+        	android:textSize="12sp"	
+		    android:text="收取不到验证码？请查看手机是否被软件拦截，或重新启动手机，如有疑问，请咨询4007-991-555"
+		    android:textColor="#ffffff" />
+
+		<ImageView
+		    android:id="@+id/imageView2"
+		    android:layout_width="15dp"
+		    android:layout_height="15dp"
+		    android:layout_alignRight="@+id/edit_verify_phone"
+		    android:layout_alignTop="@+id/edit_verify_phone"
+		    android:layout_marginTop="14dp"
+		    android:visibility="gone"
+		    android:src="@drawable/icon_password_delete" />
+
+		<TextView
+		    android:id="@+id/text_phone"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_below="@+id/textView2"
+		    android:layout_centerHorizontal="true"
+		    android:layout_marginTop="5dp"
+		    android:textColor="#ffffff"
+	    	android:textSize="18sp"
+	    	android:gravity="center"
+		    android:text="Large Text"
+		    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+</RelativeLayout>

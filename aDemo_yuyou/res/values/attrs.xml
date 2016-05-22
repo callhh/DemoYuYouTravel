@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="ClearEditText">
+
+        <!-- 清除按钮的图标 -->
+        <attr name="iconClear" format="reference" />
+    </declare-styleable>
+    <declare-styleable name="PasswordIsHideEditText">
+
+        <!-- 密码显示隐藏的图标 -->
+        <attr name="iconPsdHidden" format="reference" />
+        <attr name="iconPsdShow" format="reference" />
+    </declare-styleable>
+
+    <attr name="abstractWheelViewStyle" format="reference" />
+    <attr name="centered" format="boolean" />
+    <attr name="direction">
+        <enum name="bottomToTop" value="1" />
+        <enum name="leftToRight" value="2" />
+        <enum name="rightToLeft" value="0" />
+        <enum name="topToBottom" value="3" />
+    </attr>
+    <attr name="selectedColor" format="color" />
+    <attr name="strokeWidth" format="dimension" />
+    <attr name="unselectedColor" format="color" />
+    <attr name="visibleItems" format="integer" />
+    <attr name="isAllVisible" format="boolean" />
+    <attr name="itemOffsetPercent" format="integer" />
+    <attr name="itemsPadding" format="dimension" />
+    <attr name="selectionDividerDimmedAlpha" format="integer" />
+    <attr name="selectionDividerActiveAlpha" format="integer" />
+    <attr name="selectionDivider" format="reference" />
+    <attr name="itemsDimmedAlpha" format="integer" />
+    <attr name="isCyclic" format="boolean" />
+    <attr name="textColor" format="reference|color" />
+    <attr name="textSize" format="dimension" />
+    <attr name="tabIndicatorSelectedColor" format="color" />
+    <attr name="selectedHeight" format="dimension" />
+    <attr name="unSelectedHeight" format="dimension" />
+    <attr name="tabIndicatorUnSelectedColor" format="color" />
+    <attr name="paddingLeft" format="dimension" />
+    <attr name="paddingRight" format="dimension" />
+    <attr name="paddingTop" format="dimension" />
+    <attr name="paddingBottom" format="dimension" />
+    <attr name="aspectRatio" format="float" />
+    <attr name="countTextSize" format="dimension" />
+    <attr name="countTextColor" format="reference|color" />
+    <attr name="countAlignCorner">
+        <flag name="leftBottom" value="0x00000002" />
+        <flag name="leftTop" value="0x00000000" />
+        <flag name="rightBottom" value="0x00000003" />
+        <flag name="rightTop" value="0x00000001" />
+    </attr>
+    <attr name="fillColor" format="color" />
+    <attr name="pageColor" format="color" />
+    <attr name="radius" format="dimension" />
+    <attr name="snap" format="boolean" />
+    <attr name="strokeColor" format="color" />
+    <attr name="ringradius" format="dimension" />
+    <!-- <attr name="ringWidth" format="dimension" /> -->
+    <attr name="ringColor" format="color" />
+    <attr name="listDividerPadding" format="dimension" />
+    <attr name="totalLength" format="integer" />
+    <attr name="eachLength" format="integer" />
+    <attr name="delimiter" format="string" />
+    <attr name="placeHolder" format="string" />
+    <attr name="expandAble" format="boolean" />
+    <attr name="multipleChoiceAble" format="boolean" />
+    <attr name="has_no_limit" format="boolean" />
+    <attr name="style">
+        <flag name="comment" value="0x00000002" />
+        <flag name="filter" value="0x00000001" />
+    </attr>
+    <attr name="filter_title" format="string" />
+    <attr name="maxCollapsedLines" format="integer" />
+    <attr name="animDuration" format="integer" />
+    <attr name="animAlphaStart" format="float" />
+    <attr name="expandDrawable" format="reference" />
+    <attr name="collapseDrawable" format="reference" />
+    <attr name="horizontalSpacing" format="dimension" />
+    <attr name="verticalSpacing" format="dimension" />
+    <attr name="numColumns" format="integer" />
+    <attr name="layout_breakLine" format="boolean" />
+    <attr name="layout_horizontalSpacing" format="dimension" />
+    <attr name="orientation">
+        <enum name="horizontal" value="0" />
+        <enum name="vertical" value="1" />
+    </attr>
+    <attr name="rowCount" format="integer" />
+    <attr name="columnCount" format="integer" />
+    <attr name="useDefaultMargins" format="boolean" />
+    <attr name="alignmentMode">
+        <enum name="alignBounds" value="0" />
+        <enum name="alignMargins" value="1" />
+    </attr>
+    <attr name="rowOrderPreserved" format="boolean" />
+    <attr name="columnOrderPreserved" format="boolean" />
+    <attr name="layout_row" format="integer" />
+    <attr name="layout_rowSpan" format="integer" min="1" />
+    <attr name="layout_rowWeight" format="float" />
+    <attr name="layout_column" format="integer" />
+    <attr name="layout_columnSpan" format="integer" min="1" />
+    <attr name="layout_columnWeight" format="float" />
+    <attr name="layout_gravity">
+        <flag name="bottom" value="0x00000050" />
+        <flag name="center" value="0x00000011" />
+        <flag name="center_horizontal" value="0x00000001" />
+        <flag name="center_vertical" value="0x00000010" />
+        <flag name="clip_horizontal" value="0x00000008" />
+        <flag name="clip_vertical" value="0x00000080" />
+        <flag name="end" value="0x00800005" />
+        <flag name="fill" value="0x00000077" />
+        <flag name="fill_horizontal" value="0x00000007" />
+        <flag name="fill_vertical" value="0x00000070" />
+        <flag name="left" value="0x00000003" />
+        <flag name="right" value="0x00000005" />
+        <flag name="start" value="0x00800003" />
+        <flag name="top" value="0x00000030" />
+    </attr>
+    <attr name="lwvHighlightColor" format="reference|color" />
+    <attr name="lwvMarkColor" format="reference|color" />
+    <attr name="lwvMarkTextColor" format="reference|color" />
+    <attr name="lwvIntervalFactor" format="float" />
+    <attr name="lwvMarkRatio" format="float" />
+    <attr name="lwvCursorSize" format="dimension" />
+    <attr name="lwvMarkTextSize" format="dimension" />
+    <attr name="lwvHighlightMarkTextSize" format="dimension" />
+    <attr name="lwvAdditionalCenterMark" format="reference|string" />
+    <attr name="label_text" format="reference|string" />
+    <attr name="label_textColor" format="reference|color" />
+    <attr name="label_textSize" format="reference|dimension" />
+    <attr name="label_padding" format="reference|dimension" />
+    <attr name="label_paddingLeft" format="reference|dimension" />
+    <attr name="label_paddingRight" format="reference|dimension" />
+    <attr name="label_paddingTop" format="reference|dimension" />
+    <attr name="label_paddingBottom" format="reference|dimension" />
+    <attr name="label_layout_margin" format="reference|dimension" />
+    <attr name="label_layout_marginLeft" format="reference|dimension" />
+    <attr name="label_layout_marginRight" format="reference|dimension" />
+    <attr name="label_layout_marginTop" format="reference|dimension" />
+    <attr name="label_layout_marginBottom" format="reference|dimension" />
+    <attr name="label_text_gravity">
+        <enum name="bottom" value="6" />
+        <enum name="center" value="0" />
+        <enum name="center_horizontal" value="3" />
+        <enum name="center_vertical" value="4" />
+        <enum name="left" value="1" />
+        <enum name="right" value="2" />
+        <enum name="top" value="5" />
+    </attr>
+    <attr name="label_weight" format="integer" />
+    <attr name="edit_text" format="reference|string" />
+    <attr name="edit_textColor" format="reference|color" />
+    <attr name="edit_textSize" format="reference|dimension" />
+    <attr name="edit_padding" format="reference|dimension" />
+    <attr name="edit_paddingLeft" format="reference|dimension" />
+    <attr name="edit_paddingRight" format="reference|dimension" />
+    <attr name="edit_paddingTop" format="reference|dimension" />
+    <attr name="edit_paddingBottom" format="reference|dimension" />
+    <attr name="edit_layout_margin" format="reference|dimension" />
+    <attr name="edit_layout_marginLeft" format="reference|dimension" />
+    <attr name="edit_layout_marginRight" format="reference|dimension" />
+    <attr name="edit_layout_marginTop" format="reference|dimension" />
+    <attr name="edit_layout_marginBottom" format="reference|dimension" />
+    <attr name="edit_weight" format="integer" />
+    <attr name="edit_hint" format="reference|string" />
+    <attr name="edit_hint_color" format="reference|color" />
+    <attr name="edit_max_lines" format="integer" />
+    <attr name="editable" format="boolean" />
+    <attr name="circleradius" format="integer" />
+    <attr name="circlebg" format="color" />
+    <attr name="linebg" format="color" />
+    <attr name="itemDrawableLeft" format="reference" />
+    <attr name="itemDrawableLeftWidth" format="dimension" />
+    <attr name="itemDrawableLeftHeight" format="dimension" />
+    <attr name="itemDrawableLeftPadding" format="dimension" />
+    <attr name="itemDrawableRight" format="reference" />
+    <attr name="itemDrawableRightWidth" format="dimension" />
+    <attr name="itemDrawableRightHeight" format="dimension" />
+    <attr name="itemDrawableRightPadding" format="dimension" />
+    <attr name="itemTextLeft" format="reference|string" />
+    <attr name="itemTextLeftSize" format="dimension" />
+    <attr name="itemTextLeftColor" format="reference|color" />
+    <attr name="itemTextLeftHint" format="reference|string" />
+    <attr name="itemTextLeftHintColor" format="reference|color" />
+    <attr name="itemTextLeftHintSize" format="dimension" />
+    <attr name="itemTextRight" format="reference|string" />
+    <attr name="itemTextRightSize" format="dimension" />
+    <attr name="itemTextRightColor" format="reference|color" />
+    <attr name="itemTextRightHint" format="reference|string" />
+    <attr name="itemTextRightHintColor" format="reference|color" />
+    <attr name="itemTextRightHintSize" format="dimension" />
+    <attr name="maxHeight" format="dimension" />
+    <attr name="handle" format="reference" />
+    <attr name="content" format="reference" />
+    <attr name="bottomOffset" format="dimension" />
+    <attr name="topOffset" format="dimension" />
+    <attr name="allowSingleTap" format="boolean" />
+    <attr name="animateOnClick" format="boolean" />
+    <attr name="indicatorColor" format="color" />
+    <attr name="underlineColor" format="color" />
+    <attr name="dividerColor" format="color" />
+    <attr name="indicatorHeight" format="dimension" />
+    <attr name="underlineHeight" format="dimension" />
+    <attr name="tabPaddingLeftRight" format="dimension" />
+    <attr name="scrollOffset" format="dimension" />
+    <attr name="tabBackground" format="reference" />
+    <attr name="shouldExpand" format="boolean" />
+
+    <!-- <attr name="textAllCaps" format="boolean" /> -->
+
+    <attr name="patternViewStyle" format="reference" />
+    <attr name="aspect">
+        <enum name="lock_height" value="2" />
+        <enum name="lock_width" value="1" />
+        <enum name="square" value="0" />
+    </attr>
+    <attr name="pathColor" format="reference|color" />
+    <attr name="pathColorError" format="reference|color" />
+    <attr name="circleDrawableDefault" format="reference" />
+    <attr name="circleDrawable" format="reference" />
+    <attr name="circleDrawableError" format="reference" />
+    <attr name="arrowUpDrawable" format="reference" />
+    <attr name="header" format="reference" />
+    <attr name="headerHeight" format="dimension" />
+    <attr name="headerVisibleHeight" format="dimension" />
+    <attr name="adapterViewBackground" format="reference|color" />
+    <attr name="pullheaderBackground" format="reference|color" />
+    <attr name="headerTextColor" format="color" />
+    <attr name="pullmode">
+        <flag name="both" value="0x00000003" />
+        <flag name="pullDownFromTop" value="0x00000001" />
+        <flag name="pullUpFromBottom" value="0x00000002" />
+    </attr>
+    <attr name="tickCount" format="integer" />
+    <attr name="tickHeight" format="dimension" />
+    <attr name="barWeight" format="dimension" />
+    <attr name="barColor" format="reference|color" />
+    <attr name="connectingLineWeight" format="dimension" />
+    <attr name="connectingLineColor" format="reference|color" />
+    <attr name="thumbRadius" format="dimension" />
+    <attr name="thumbImageNormal" format="reference" />
+    <attr name="thumbImagePressed" format="reference" />
+    <attr name="thumbColorNormal" format="reference|color" />
+    <attr name="thumbColorPressed" format="reference|color" />
+    <attr name="ratioReference">
+        <enum name="horizontal" value="0" />
+        <enum name="vertical" value="1" />
+    </attr>
+    <attr name="widthRatio" format="float" />
+    <attr name="heightRatio" format="float" />
+    <attr name="rb_duration" format="integer" />
+    <attr name="rb_rippleAmount" format="integer" />
+    <attr name="rb_scale" format="float" />
+    <attr name="rb_type">
+        <enum name="fillRipple" value="0" />
+        <enum name="strokeRipple" value="1" />
+    </attr>
+    <attr name="roundColor" format="color" />
+    <attr name="roundProgressColor" format="color" />
+    <attr name="roundProgressTailColor" format="color" />
+    <attr name="roundWidth" format="dimension" />
+    <attr name="roundtextColor" format="color" />
+    <attr name="roundtextSize" format="dimension" />
+    <attr name="text" format="string" />
+<!--     <attr name="max" format="integer" /> -->
+    <attr name="textIsDisplayable" format="boolean" />
+    <attr name="roundstyle">
+        <enum name="FILL" value="1" />
+        <enum name="STROKE" value="0" />
+    </attr>
+    <attr name="progressTextColor" format="color" />
+    <attr name="progressTextSize" format="dimension" />
+    <attr name="barStyle">
+        <enum name="FILL" value="1" />
+        <enum name="STROKE" value="0" />
+    </attr>
+    <attr name="corner_radius" format="dimension" />
+    <attr name="border_width" format="dimension" />
+    <attr name="border_color" format="color" />
+    <attr name="mutate_background" format="boolean" />
+    <attr name="oval" format="boolean" />
+    <attr name="sriv_left_top_corner_radius" format="dimension" />
+    <attr name="sriv_right_top_corner_radius" format="dimension" />
+    <attr name="sriv_left_bottom_corner_radius" format="dimension" />
+    <attr name="sriv_right_bottom_corner_radius" format="dimension" />
+    <attr name="sriv_border_width" format="dimension" />
+    <attr name="sriv_border_color" format="color" />
+    <attr name="sriv_oval" format="boolean" />
+    <attr name="mode">
+        <enum name="left" value="0" />
+        <enum name="right" value="1" />
+    </attr>
+    <attr name="viewAbove" format="reference" />
+    <attr name="viewBehind" format="reference" />
+    <attr name="behindOffset" format="dimension" />
+    <attr name="behindWidth" format="dimension" />
+    <attr name="behindScrollScale" format="float" />
+    <attr name="touchModeAbove">
+        <enum name="fullscreen" value="1" />
+        <enum name="margin" value="0" />
+    </attr>
+    <attr name="touchModeBehind">
+        <enum name="fullscreen" value="1" />
+        <enum name="margin" value="0" />
+    </attr>
+    <attr name="shadowDrawable" format="reference" />
+    <attr name="shadowWidth" format="dimension" />
+    <attr name="fadeEnabled" format="boolean" />
+    <attr name="fadeDegree" format="float" />
+    <attr name="selectorEnabled" format="boolean" />
+    <attr name="selectorDrawable" format="reference" />
+    <attr name="panelHeight" format="dimension" />
+    <attr name="shadowHeight" format="dimension" />
+    <attr name="paralaxOffset" format="dimension" />
+    <attr name="fadeColor" format="color" />
+    <attr name="flingVelocity" format="integer" />
+    <attr name="dragView" format="reference" />
+    <attr name="overlay" format="boolean" />
+    <attr name="anchorPoint" format="float" />
+    <attr name="initialState">
+        <enum name="anchored" value="2" />
+        <enum name="collapsed" value="1" />
+        <enum name="expanded" value="0" />
+        <enum name="hidden" value="3" />
+    </attr>
+    <attr name="hasStickyHeaders" format="boolean" />
+    <attr name="isDrawingListUnderStickyHeader" format="boolean" />
+    <attr name="stickyListHeadersListViewStyle" format="reference" />
+    <attr name="stuckShadowHeight" format="dimension" />
+    <attr name="stuckShadowDrawable" format="reference" />
+    <attr name="anim_duration" format="integer" />
+    <attr name="rowMarginLeft" format="dimension" />
+    <attr name="rowMarginRight" format="dimension" />
+    <attr name="rowMarginTop" format="dimension" />
+    <attr name="rowMarginBottom" format="dimension" />
+    <attr name="labelMarginLeft" format="dimension" />
+    <attr name="labelMarginRight" format="dimension" />
+    <attr name="labelMarginTop" format="dimension" />
+    <attr name="labelMarginBottom" format="dimension" />
+    <attr name="labelPaddingLeft" format="dimension" />
+    <attr name="labelPaddingRight" format="dimension" />
+    <attr name="labelPaddingTop" format="dimension" />
+    <attr name="labelPaddingBottom" format="dimension" />
+    <attr name="labelRadioX" format="dimension" />
+    <attr name="labelRadioY" format="dimension" />
+    <attr name="labelTextSize" format="dimension" />
+    <attr name="labelTextColor" format="color" />
+    <attr name="labelBackgroundColor" format="color" />
+    <attr name="defaultStyle" format="boolean" />
+    <attr name="tr_direction">
+        <enum name="left" value="0" />
+        <enum name="right" value="2" />
+        <enum name="down" value="3" />
+        <enum name="tag" value="4" />
+        <enum name="up" value="1" />
+    </attr>
+    <attr name="tr_color" format="color" />
+    <attr name="uvv_scalable" format="boolean" />
+    <attr name="uvv_fitXY" format="boolean" />
+    <attr name="vpiCirclePageIndicatorStyle" format="reference" />
+    <attr name="vpiTabPageIndicatorStyle" format="reference" />
+    <attr name="defStyle" format="boolean" />
+    <attr name="selectionDividerWidth" format="dimension" />
+    <attr name="selectionDividerHeight" format="dimension" />
+    <attr name="state_selectable" format="boolean" />
+    <attr name="state_current_month" format="boolean" />
+    <attr name="state_today" format="boolean" />
+
+</resources>

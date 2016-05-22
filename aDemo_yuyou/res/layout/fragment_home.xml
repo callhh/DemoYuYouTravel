@@ -1,0 +1,55 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.sample.fragment.HomeFragment" >
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <include
+        android:id="@+id/layout_home_actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        layout="@layout/home_actionbar" />
+
+     <com.handmark.pulltorefresh.library.PullToRefreshListView
+         xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/pull_refresh_list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/layout_home_actionbar"
+        android:cacheColorHint="#00000000"
+        android:divider="#19000000"
+        android:fadingEdge="none"
+        android:fastScrollEnabled="false"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false"
+        android:listSelector="@android:color/transparent"
+        android:smoothScrollbar="true"
+        android:scrollbars="none"
+        app:ptrMode="both" >
+
+    </com.handmark.pulltorefresh.library.PullToRefreshListView>
+    
+        <include
+        android:id="@+id/home_overlay_card1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_below="@+id/layout_home_actionbar"
+        layout="@layout/home_overlay_card1" />
+
+    <include
+        android:id="@+id/home_overlay_card2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/home_overlay_card1"
+        android:visibility="visible"
+        layout="@layout/home_overlay_card2" />
+    
+
+</RelativeLayout>

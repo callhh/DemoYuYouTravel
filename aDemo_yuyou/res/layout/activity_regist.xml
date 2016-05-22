@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/bg_signin">
+
+    <include layout="@layout/include_title_account" />
+
+    <TextView
+        style="@style/tv_title_white_style"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="33.0dip"
+        android:gravity="center_horizontal"
+        android:text="请输入你的手机号码" />
+
+    <com.callhh.android.clearedittext.widget.ClearEditText
+        android:id="@+id/et_register_phone_input"
+        style="@style/Account.EditText.Line"
+        android:layout_marginLeft="@dimen/login_common_side_margin"
+        android:layout_marginRight="@dimen/login_common_side_margin"
+        android:layout_marginTop="25.0dip"
+        android:hint="请输入11位手机号码"
+        android:inputType="numberSigned"
+        app:iconClear="@drawable/icon_password_delete"
+        android:maxLength="13" />
+
+    <Button
+        android:id="@+id/btn_register_phone_submit"
+        style="@style/btn_orange"
+        android:layout_marginLeft="@dimen/login_common_side_margin"
+        android:layout_marginRight="@dimen/login_common_side_margin"
+        android:layout_marginTop="@dimen/login_common_top_margin"
+        android:enabled="true"
+        android:background="#ff6815"
+        android:textColor="#ffffff"
+        android:text="@string/verify_code_send" />
+
+    <TextView
+        style="@style/tv_hint_white_style"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/login_common_side_margin"
+        android:layout_marginRight="@dimen/login_common_side_margin"
+        android:layout_marginTop="16.0dip"
+        android:alpha="0.5"
+        android:gravity="center"
+        android:text="点击“获取验证码”表示您已同意" />
+
+    <TextView
+        android:id="@+id/tv_register_policy"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/login_common_side_margin"
+        android:layout_marginRight="@dimen/login_common_side_margin"
+        android:gravity="center"
+        android:text="《同程旅游服务条款》"
+        android:textColor="@color/blue_half1"
+        android:textSize="@dimen/text_size_hint" />
+
+</LinearLayout>

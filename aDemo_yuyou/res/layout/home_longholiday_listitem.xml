@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/img_home_longholiday_list_zhutu"
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:src="@drawable/ic_launcher" 
+        android:scaleType="fitXY"
+        />
+
+    <RelativeLayout
+        android:id="@+id/layout_home_listview_title_detail"
+        android:layout_width="match_parent"
+        android:layout_height="88dp"
+        android:padding="14dp"
+        android:layout_below="@+id/img_home_longholiday_list_zhutu" >
+
+        <TextView
+            android:id="@+id/tv_home_longholiday_list_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="香港1晚2日观光半自助游"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:textSize="18sp"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/tv_home_longholiday_list_subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tv_home_listview_title"
+            android:layout_marginTop="25dp"
+            android:text="深圳出发，2人成行，赠电话卡一张"
+            android:textColor="#808080"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:textSize="13sp"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <TextView
+            android:id="@+id/tv_home_longholiday_list_label1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tv_home_listview_subtitle"
+            android:layout_alignParentBottom="true"
+            android:text="热门"
+            android:textSize="11sp"
+            android:textColor="#ff6e50"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <TextView
+            android:id="@+id/tv_home_longholiday_list_label2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@+id/tv_home_longholiday_list_label1"
+            android:layout_alignBottom="@+id/tv_home_longholiday_list_label1"
+            android:text=""
+            android:textSize="11sp"
+            android:textColor="#23d842"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+        <TextView
+            android:id="@+id/tv_home_longholiday_list_label3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@+id/tv_home_longholiday_list_label2"
+            android:layout_alignBottom="@+id/tv_home_longholiday_list_label2"
+            android:text=""
+            android:textSize="11sp"
+            android:textColor="#ff6e50"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+        <TextView
+            android:id="@+id/tv_home_longholiday_list_label4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@+id/tv_home_longholiday_list_label3"
+            android:layout_alignBottom="@+id/tv_home_longholiday_list_label3"
+            android:text=""
+            android:textSize="11sp"
+            android:textColor="#ff6e50"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+        <TextView
+            android:id="@+id/tv_home_longholiday_list_label5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@+id/tv_home_longholiday_list_label4"
+            android:layout_alignBottom="@+id/tv_home_longholiday_list_label4"
+            android:text=""
+            android:textSize="11sp"
+            android:textColor="#ff6e50"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_home_longholiday_list_jingxuan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="12dp"
+        android:padding="6dp"
+        android:text="出境精选"
+        android:textSize="12sp"
+        android:textColor="#ffffff"
+        android:background="#90000000"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/tv_home_longholiday_list_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/img_home_longholiday_list_zhutu"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="12dp"
+            android:background="#333333"
+            android:paddingBottom="5dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="22dp"
+            android:paddingTop="5dp"
+            android:text="270"
+            android:textSize="18sp"
+            android:textColor="#ffffff" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tv_home_longholiday_list_price"
+            android:layout_alignBottom="@+id/tv_home_longholiday_list_price"
+            android:layout_marginLeft="7dp"
+            android:text="￥"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#ffffff" />
+
+</RelativeLayout>

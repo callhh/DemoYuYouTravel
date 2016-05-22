@@ -1,0 +1,328 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_main"
+    tools:context="com.example.sample.HomeDetailActivity" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/ll_vacation_detail_bottom_container" >
+
+        <FrameLayout
+            android:id="@+id/fl_vacation_detail_container"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:visibility="visible" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="4.0" >
+
+                <View
+                    android:id="@+id/view_vacation_detail_ratio"
+                    android:layout_width="0.0dip"
+                    android:layout_height="1.0dip"
+                    android:layout_weight="1.0" />
+            </LinearLayout>
+
+            <com.example.sample.widget.ScrollViewExtend
+                android:id="@+id/sv_vacation_detail_frame"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:overScrollMode="never"
+                android:scrollbars="none" >
+
+                <include
+                    android:id="@+id/vacation_detail_content_layout"
+                    layout="@layout/vacation_detail_layout" />
+            </com.example.sample.widget.ScrollViewExtend>
+
+            
+            <include
+                android:id="@+id/toolbar_include"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                layout="@layout/actionbar_selected_layout" />
+
+            <include
+                android:id="@+id/toolbar_include02"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                layout="@layout/actionbar_selected_layout_overlay"
+                android:background="#FFFFFF"
+                android:visibility="gone" />
+            
+            <LinearLayout
+                android:id="@+id/ll_vacation_detail_overlay_tab"
+                android:layout_width="fill_parent"
+                android:layout_height="48.0dip"
+                android:layout_marginTop="@dimen/tc_actionbar_height"
+                android:background="@drawable/bg_twoline_common"
+                android:orientation="horizontal"
+                android:paddingLeft="3.0dip"
+                android:paddingRight="3.0dip"
+                android:visibility="gone" >
+
+                <LinearLayout
+                    android:id="@+id/layout_detail_overlay_tab1"
+                    android:layout_width="0.0dip"
+                    android:layout_height="42.0dip"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginBottom="6.0dip"
+                    android:layout_marginLeft="8.0dip"
+                    android:layout_marginRight="8.0dip"
+                    android:layout_marginTop="6.0dip"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/selector_bg_home_rec_tab"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/homepage_10dp"
+                    android:paddingRight="@dimen/homepage_10dp" >
+
+                    <TextView
+                        android:id="@+id/tv_detail_tab1_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:includeFontPadding="false"
+                        android:paddingTop="@dimen/homepage_2dp"
+                        android:singleLine="true"
+                        android:text="行程安排"
+                        android:textColor="@color/detail_rec_tab_title_color"
+                        android:textSize="12.0sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_detail_overlay_tab2"
+                    android:layout_width="0.0dip"
+                    android:layout_height="42.0dip"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginBottom="6.0dip"
+                    android:layout_marginLeft="8.0dip"
+                    android:layout_marginRight="8.0dip"
+                    android:layout_marginTop="6.0dip"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/selector_bg_home_rec_tab"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/homepage_10dp"
+                    android:paddingRight="@dimen/homepage_10dp" >
+
+                    <TextView
+                        android:id="@+id/tv_detail_tab2_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:includeFontPadding="false"
+                        android:paddingTop="@dimen/homepage_2dp"
+                        android:singleLine="true"
+                        android:text="体验特色"
+                        android:textColor="@color/detail_rec_tab_title_color"
+                        android:textSize="12.0sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_detail_overlay_tab3"
+                    android:layout_width="0.0dip"
+                    android:layout_height="42.0dip"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginBottom="6.0dip"
+                    android:layout_marginLeft="8.0dip"
+                    android:layout_marginRight="8.0dip"
+                    android:layout_marginTop="6.0dip"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/selector_bg_home_rec_tab"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/homepage_10dp"
+                    android:paddingRight="@dimen/homepage_10dp" >
+
+                    <TextView
+                        android:id="@+id/tv_detail_tab3_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:includeFontPadding="false"
+                        android:paddingTop="@dimen/homepage_2dp"
+                        android:singleLine="true"
+                        android:text="点评"
+                        android:textColor="@color/detail_rec_tab_title_color"
+                        android:textSize="12.0sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_detail_overlay_tab4"
+                    android:layout_width="0.0dip"
+                    android:layout_height="42.0dip"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginBottom="6.0dip"
+                    android:layout_marginLeft="8.0dip"
+                    android:layout_marginRight="8.0dip"
+                    android:layout_marginTop="6.0dip"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/selector_bg_home_rec_tab"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/homepage_10dp"
+                    android:paddingRight="@dimen/homepage_10dp" >
+
+                    <TextView
+                        android:id="@+id/tv_detail_tab4_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:includeFontPadding="false"
+                        android:paddingTop="@dimen/homepage_2dp"
+                        android:singleLine="true"
+                        android:text="费用须知"
+                        android:textColor="@color/detail_rec_tab_title_color"
+                        android:textSize="12.0sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/el_vacation_detail_empty"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/common_high_errlayout_top_margin"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <include layout="@layout/layout_err" />
+        </LinearLayout>
+
+        <include
+            android:id="@+id/vacation_detail_progress"
+            layout="@layout/progress_layout"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/rl_vacation_detail_contrast"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="25.0dip"
+            android:layout_marginRight="15.0dip"
+            android:visibility="invisible" >
+
+            <ImageView
+                android:id="@+id/iv_vacation_detail_contrast"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/btn_comparisonory_suspension" />
+
+            <TextView
+                android:id="@+id/tv_vacation_detail_contrast_num"
+                android:layout_width="17.0dip"
+                android:layout_height="17.0dip"
+                android:layout_alignRight="@id/iv_vacation_detail_contrast"
+                android:layout_marginRight="3.5dip"
+                android:layout_marginTop="3.0dip"
+                android:gravity="center"
+                android:paddingBottom="1.0dip"
+                android:paddingLeft="1.0dip"
+                android:text="3"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_xsmall"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/iv_vacation_detail_trip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/rl_vacation_detail_contrast"
+            android:layout_alignLeft="@id/rl_vacation_detail_contrast"
+            android:layout_marginBottom="10.0dip"
+            android:src="@drawable/btn_overview_detail_vacation"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_vacation_detail_bottom_container"
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bg_upline_common"
+        android:orientation="horizontal"
+        android:visibility="visible" >
+
+        <LinearLayout
+            android:id="@+id/ll_vacation_detail_collection"
+            style="@style/order_submit_white_button"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="@dimen/line_hight"
+            android:layout_weight="2.0"
+            android:orientation="vertical"
+            android:visibility="visible" >
+
+            <ImageView
+                android:id="@+id/iv_vacation_detail_collection"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="4.0dip"
+                android:layout_marginTop="2.0dip"
+                android:src="@drawable/icon_vacation_home_favorite_off" />
+
+            <TextView
+                android:id="@+id/tv_vacation_detail_collection"
+                style="@style/tv_list_secondary_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/vacation_detail_collection"
+                android:textSize="@dimen/text_size_xsmall" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_vacation_detail_consultation"
+            style="@style/order_submit_white_button"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="@dimen/line_hight"
+            android:layout_weight="2.0"
+            android:orientation="vertical"
+            android:visibility="visible" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="4.0dip"
+                android:layout_marginTop="2.0dip"
+                android:src="@drawable/icon_phone_common" />
+
+            <TextView
+                style="@style/tv_list_secondary_style"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/vacation_detail_consultation"
+                android:textSize="@dimen/text_size_xsmall" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_vacation_detail_book"
+            style="@style/order_submit_origin_button"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="3.0"
+            android:drawablePadding="11.0dip"
+            android:gravity="center"
+            android:text="@string/vacation_detail_book" />
+    </LinearLayout>
+
+</RelativeLayout>

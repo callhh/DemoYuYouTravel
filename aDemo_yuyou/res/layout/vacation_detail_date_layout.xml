@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/ll_vacation_detail_date"
+        android:layout_width="fill_parent"
+        android:layout_height="48.0dip"
+        android:layout_marginTop="@dimen/vacation_common_cell_margin"
+        android:background="@drawable/selector_cell_two_line"
+        android:paddingLeft="@dimen/common_margin"
+        android:paddingRight="@dimen/common_margin" >
+
+        <TextView
+            android:id="@id/tv_vacation_detail_date_tip"
+            style="@style/tv_list_primary_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="11.0dip"
+            android:drawableLeft="@drawable/icon_details_departuredate"
+            android:drawablePadding="11.0dip"
+            android:gravity="center_vertical"
+            android:text="@string/vacation_detail_depart_time" />
+
+        <TextView
+            android:id="@id/tv_vacation_detail_date"
+            style="@style/tv_info_hint_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/tv_vacation_detail_date_tip"
+            android:drawablePadding="11.0dip"
+            android:drawableRight="@drawable/arrow_list_common"
+            android:ellipsize="end"
+            android:gravity="center|right"
+            android:hint="@string/vacation_detail_select_date"
+            android:singleLine="true" />
+    </RelativeLayout>
+
+</RelativeLayout>

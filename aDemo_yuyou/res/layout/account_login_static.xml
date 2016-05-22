@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/login_common_side_margin"
+    android:paddingRight="@dimen/login_common_side_margin" >
+
+    <com.callhh.android.clearedittext.widget.ClearEditText
+        android:id="@+id/et_user_name"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_marginTop="20dp"
+        android:drawablePadding="10dp"
+        android:hint="@string/account_login_username_input"
+        android:paddingRight="10dp"
+        android:singleLine="true"
+        android:textColor="@color/main_white"
+        android:textColorHint="@color/white_half4"
+        android:textCursorDrawable="@drawable/cursor_white"
+        android:textSize="15sp"
+        android:background="@drawable/selector_bg_input"
+        app:iconClear="@drawable/icon_password_delete" />
+
+        <com.callhh.android.clearedittext.widget.PasswordIsHideEditText
+            android:id="@+id/et_login_static_password_input"
+            style="@style/Account.EditText.Line"
+            android:layout_marginTop="6.0dip"
+            android:ems="10"
+            android:hint="@string/account_login_password_input"
+            android:inputType="textPassword"
+            app:iconPsdHidden="@drawable/icon_password_hide"
+            app:iconPsdShow="@drawable/icon_password_show"
+            android:maxLength="30" />
+
+     
+
+    <Button
+        android:id="@+id/btn_login_static_commit"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#ff6815"
+        android:textSize="@dimen/text_size_list"
+        android:textColor="@color/selector_white_alpha_text"
+        android:layout_marginTop="@dimen/login_common_top_margin"
+        android:text="@string/login" />
+
+    <Button
+        android:id="@+id/btn_nomember_book"
+        style="@style/btn_orange"
+        android:layout_width="fill_parent"
+        android:layout_marginTop="12.0dip"
+        android:background="@drawable/btn_nomember_login"
+        android:visibility="gone" />
+
+</LinearLayout>

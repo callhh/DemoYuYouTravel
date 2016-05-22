@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:layout_gravity="center" >
+
+    <ProgressBar
+        android:id="@+id/fish_progressBar"
+        style="@style/ProgressBar.Tc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/loading_tips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fish_progressBar"
+        android:layout_marginTop="5.0dip"
+        android:text="@string/loading_public_default_desc"
+        android:textColor="@color/main_null"
+        android:textSize="@dimen/text_size_info" />
+
+</RelativeLayout>

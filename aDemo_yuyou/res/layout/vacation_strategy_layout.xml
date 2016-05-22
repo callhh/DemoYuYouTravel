@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@id/rl_vacation_strategy_container"
+        android:layout_width="fill_parent"
+        android:layout_height="48.0dip"
+        android:background="@drawable/selector_cell_two_line" >
+
+        <TextView
+            style="@style/tv_list_primary_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/common_margin"
+            android:drawableLeft="@drawable/icon_details_raiders"
+            android:drawablePadding="9.0dip"
+            android:text="@string/vacation_strategy" />
+
+        <TextView
+            style="@style/tv_info_hint_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/common_margin"
+            android:drawablePadding="9.0dip"
+            android:drawableRight="@drawable/arrow_list_common"
+            android:text="@string/vacation_strategy_detail" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@id/slv_vacation_stragegy_detail"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" />
+
+</LinearLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/ll_actionbar_overlay"
+        android:layout_width="fill_parent"
+        android:layout_height="52.0dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+         >
+
+        <ImageView
+            android:id="@+id/detail_tb_img_back_ol"
+            android:layout_width="52.0dip"
+            android:layout_height="52.0dip"
+            android:scaleType="center"
+            android:src="@drawable/icon_navi_back_pressed" />
+
+        <TextView
+            android:id="@+id/detail_tb_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text=""
+            android:textColor="#000000" />
+
+        <ImageView
+            android:id="@+id/detail_tb_img_share_ol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="12dp"
+            android:src="@drawable/icon_navi_detail_share_active_rest" />
+
+        <ImageView
+            android:id="@+id/detail_tb_img_more_ol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="12dp"
+            android:src="@drawable/icon_navi_home_more_rest" />
+    </LinearLayout>
+
+</LinearLayout>

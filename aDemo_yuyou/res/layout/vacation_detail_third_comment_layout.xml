@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="44.0dip"
+    android:background="@drawable/selector_cell_two_line" >
+
+   <TextView
+            android:id="@id/tv_vacation_detail_comment_title"
+            style="@style/tv_list_primary_style"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:drawableLeft="@drawable/icon_details_comment"
+            android:drawablePadding="11.0dip"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/common_margin"
+            android:paddingRight="@dimen/common_margin"
+            android:text="@string/vacation_detail_fee" />
+
+    <TextView
+        android:id="@id/tv_vacation_third_comment_count"
+        style="@style/tv_info_hint_style"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/tv_vacation_third_comment_title"
+        android:drawablePadding="11.0dip"
+        android:drawableRight="@drawable/arrow_list_common"
+        android:ellipsize="end"
+        android:gravity="center|right"
+        android:paddingLeft="@dimen/common_margin"
+        android:paddingRight="@dimen/common_margin"
+        android:singleLine="true" />
+
+</RelativeLayout>

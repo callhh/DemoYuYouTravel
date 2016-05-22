@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="50.0dip"
+    android:orientation="horizontal" >
+
+    <ImageView
+        android:id="@+id/img_regist_step_three_back_button"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_centerVertical="true"
+        android:paddingLeft="@dimen/common_margin"
+        android:paddingRight="@dimen/common_margin"
+        android:src="@drawable/arrow_list_common_white_left" />
+
+    <TextView
+        android:id="@+id/title"
+        style="@style/tv_list_white_style"
+        android:layout_width="wrap_content"
+        android:layout_centerInParent="true" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/line_hight"
+        android:layout_alignParentBottom="true"
+        android:background="@color/main_line_translucence" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/title"
+        android:layout_alignBottom="@+id/title"
+        android:layout_centerHorizontal="true"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        android:text="注册" />
+
+</RelativeLayout>

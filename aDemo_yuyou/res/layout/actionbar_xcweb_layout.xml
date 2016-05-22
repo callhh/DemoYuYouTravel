@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/xc_ll_actionbar"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/tc_actionbar_height"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/xc_img_actionbar_icon"
+            android:layout_width="@dimen/tc_actionbar_height"
+            android:layout_height="@dimen/tc_actionbar_height"
+            android:scaleType="center"
+            android:src="@drawable/selector_navi_back" />
+
+        <RelativeLayout
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0" >
+
+            <LinearLayout
+                android:id="@+id/xc_ll_leftselected_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/xc_tv_actionbar_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:text="行程"
+                    android:textColor="@color/navibar_title_text"
+                    android:textSize="18.0sp" />
+
+                <ImageView
+                    android:id="@+id/xc_img_actionbar_sanjiao"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3.0dip"
+                    android:layout_marginRight="12.0dip"
+                    android:src="@drawable/arrow_filter_down_rest"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/xc_menu_item_left"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/xc_menu_item_middle"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:src="@drawable/selector_icon_navi_detail_share"
+            android:visibility="visible" />
+
+    </LinearLayout>
+
+</LinearLayout>

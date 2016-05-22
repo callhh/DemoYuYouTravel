@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:paddingTop="10dp"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_alignParentLeft="true"
+        android:background="#FFFFFF"
+        android:paddingLeft="10dp"
+        android:layout_alignParentTop="true" >
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/arrow_calendar_right_assistant" />
+
+        <ImageView
+            android:id="@+id/mudul_icon"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_qiqiu" />
+
+        <TextView
+            android:id="@+id/modu_Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/imageView7"
+            android:layout_marginLeft="12dp"
+            android:layout_toRightOf="@+id/mudul_icon"
+            android:text="本地人当季爱去"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
+    <GridView
+        android:id="@+id/gridv_find_local_man"
+        android:layout_width="match_parent"
+        android:background="#FFFFFF"
+        android:layout_height="250dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/relativeLayout2"
+        android:scrollbars="none"
+        android:numColumns="2" >
+    </GridView>
+
+</RelativeLayout>

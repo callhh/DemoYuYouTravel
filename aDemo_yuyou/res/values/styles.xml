@@ -1,0 +1,256 @@
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <style name="Account.Button.CodeSend" parent="@android:style/Widget.TextView">
+        <item name="android:textSize">@dimen/text_size_info</item>
+        <item name="android:textColor">@color/main_white</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/btn_code_send</item>
+        <item name="android:layout_width">100.0dip</item>
+        <item name="android:layout_height">34.0dip</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="Account.Cell.Profile" parent="@style/tv_info_primary_style">
+        <item name="android:textColorHint">@color/main_disable</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">right</item>
+        <item name="android:layout_width">0.0dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginRight">@dimen/common_margin</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:drawableRight">@drawable/arrow_list_common_right</item>
+        <item name="android:drawablePadding">@dimen/common_margin</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+
+    <style name="Account.EditText.All" parent="@android:style/Widget.EditText">
+        <item name="android:textSize">@dimen/text_size_list</item>
+        <item name="android:textColor">@color/main_primary</item>
+        <item name="android:textColorHint">@color/main_disable</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">@dimen/s_component_height</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:drawablePadding">5.0dip</item>
+    </style>
+
+    <style name="Account.EditText.Alter" parent="@style/Account.EditText.All">
+        <item name="android:background">@drawable/bg_twoline_common</item>
+        <item name="android:paddingLeft">@dimen/common_margin</item>
+        <item name="android:paddingRight">@dimen/common_margin</item>
+    </style>
+
+    <style name="Account.EditText.Alter.Password" parent="@style/Account.EditText.All">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:paddingRight">@dimen/common_margin</item>
+        <item name="android:inputType">textPassword</item>
+    </style>
+
+    <style name="Account.EditText.Line" parent="@android:style/Widget.EditText">
+        <item name="android:textSize">@dimen/text_size_info</item>
+        <item name="android:textColor">@color/main_white</item>
+        <item name="android:textColorHint">@color/white_half4</item>
+        <item name="android:background">@drawable/selector_bg_input</item>
+        <item name="android:paddingRight">10.0dip</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">54.0dip</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:drawablePadding">10.0dip</item>
+        <item name="android:textCursorDrawable">@drawable/cursor_white</item>
+    </style>
+
+    <style name="Account.TextView.ThirdManage" parent="@style/tv_info_hint_style">
+        <item name="android:textColor">@color/selector_green_hint</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_gravity">center|right</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:drawableRight">@drawable/arrow_list_common_right</item>
+        <item name="android:drawablePadding">12.0dip</item>
+    </style>
+
+    <style name="Account_Cell_All">
+        <item name="android:background">@drawable/selector_cell_transparent</item>
+        <item name="android:paddingLeft">@dimen/common_margin</item>
+        <item name="android:paddingRight">@dimen/common_margin</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">@dimen/s_component_height</item>
+    </style>
+
+    <style name="tv_info_hint_style" parent="@android:style/Widget.TextView">
+        <item name="android:textSize">@dimen/text_size_info</item>
+        <item name="android:textColor">@color/main_hint</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="tv_info_primary_style" parent="@android:style/Widget.TextView">
+        <item name="android:textSize">@dimen/text_size_info</item>
+        <item name="android:textColor">@color/main_primary</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="tv_list_white_style" parent="@android:style/Widget.TextView">
+        <item name="android:textSize">@dimen/text_size_list</item>
+        <item name="android:textColor">@color/main_white</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="tv_hint_white_style" parent="@android:style/Widget.TextView">
+        <item name="android:textSize">@dimen/text_size_hint</item>
+        <item name="android:textColor">@color/main_white</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="btn_orange" parent="@android:style/Widget.Button">
+        <item name="android:textSize">@dimen/text_size_list</item>
+        <item name="android:textColor">@color/selector_white_alpha_text</item>
+        <item name="android:background">@color/guide_send</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">@dimen/btn_height_commen_big</item>
+    </style>
+
+    <style name="tv_title_white_style" parent="@android:style/Widget.TextView">
+        <item name="android:textSize">@dimen/text_size_title</item>
+        <item name="android:textColor">@color/main_white</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    
+    <!-- 行程页面Header -->
+    <style name="btn_orange_xc" parent="@android:style/Widget.Button">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/selector_white_alpha_text</item>
+        <item name="android:background">@drawable/selector_btn_orange</item>
+        <item name="android:layout_width">200dp</item>
+        <item name="android:layout_height">@dimen/btn_height_commen_big</item>
+    </style>
+    
+    
+    <style name="tv_info_secondary_style" parent="@android:style/Widget.TextView">
+        <item name="android:textSize">@dimen/text_size_info</item>
+        <item name="android:textColor">@color/main_secondary</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+     <style name="ProgressBar.Tc" parent="@android:style/Widget.ProgressBar">
+        <item name="android:indeterminateDrawable">@drawable/progress_wave</item>
+        <item name="android:minWidth">66.0dip</item>
+        <item name="android:minHeight">66.0dip</item>
+    </style>
+    
+     <drawable name="transparent">#00000000</drawable>
+    <drawable name="list_selector_pre">#b4ebff</drawable>
+    <drawable name="list_selector_state">#ffffff</drawable>
+    <drawable name="list_selector_stated">#51c871</drawable>
+    
+     <drawable name="transparent_list_text">#000000</drawable>
+    <drawable name="list_text_selector_state">#319331</drawable>
+    
+    
+    <style name="ProgressBar.Loading" parent="@android:style/Widget.ProgressBar">
+        <item name="android:maxWidth">28.0dip</item>
+        <item name="android:maxHeight">28.0dip</item>
+        <item name="android:indeterminateDrawable">@drawable/animation_loading</item>
+        <item name="android:indeterminateDuration">800</item>
+        <item name="android:minWidth">28.0dip</item>
+        <item name="android:minHeight">28.0dip</item>
+    </style>
+    
+    <style name="order_submit_white_button" parent="@android:style/Widget.TextView">
+        <item name="android:textSize">@dimen/text_size_title</item>
+        <item name="android:textColor">@color/main_secondary</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/selector_order_submit_white</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/order_submit_bottom_height</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="tv_list_secondary_style" parent="@android:style/Widget.TextView">
+        <item name="android:textSize">@dimen/text_size_list</item>
+        <item name="android:textColor">@color/main_secondary</item>
+        <item name="android:textColorHint">@color/main_hint</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="order_submit_origin_button" parent="@android:style/Widget.TextView">
+        <item name="android:textSize">@dimen/text_size_title</item>
+        <item name="android:textColor">@color/main_white</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/selector_order_submit_orange</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/order_submit_bottom_height</item>
+        <item name="android:singleLine">true</item>
+    </style>
+     <style name="tv_warning_info_null_style" parent="@android:style/Widget.TextView">
+        <item name="android:textSize">@dimen/text_size_info</item>
+        <item name="android:textColor">@color/main_null</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:lineSpacingExtra">@dimen/common_warning_line_space</item>
+    </style>
+     <style name="btn_err_layout_white_style" parent="@android:style/Widget.Button">
+        <item name="android:textSize">@dimen/text_size_title</item>
+        <item name="android:textColor">@color/main_secondary</item>
+        <item name="android:background">@drawable/selector_btn_action_secondcommen</item>
+        <item name="android:paddingLeft">10.0dip</item>
+        <item name="android:paddingRight">10.0dip</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">48.0dip</item>
+    </style>
+    <style name="tv_hint_hint_style" parent="@android:style/Widget.TextView">
+        <item name="android:textSize">@dimen/text_size_hint</item>
+        <item name="android:textColor">@color/main_hint</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+     <style name="tv_list_primary_style" parent="@android:style/Widget.TextView">
+        <item name="android:textSize">@dimen/text_size_list</item>
+        <item name="android:textColor">@color/main_primary</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="tv_hint_orange_style" parent="@android:style/Widget.TextView">
+        <item name="android:textSize">@dimen/text_size_hint</item>
+        <item name="android:textColor">@color/main_orange</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="tv_hint_secondary_style" parent="@android:style/Widget.TextView">
+        <item name="android:textSize">@dimen/text_size_hint_detail</item>
+        <item name="android:textColor">@color/main_secondary</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="tv_hint_primary_style" parent="@android:style/Widget.TextView">
+        <item name="android:textSize">@dimen/text_size_hint</item>
+        <item name="android:textColor">@color/detail_vacation_installment_info</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="consultantRatingBar" parent="@android:style/Widget.RatingBar">
+        <item name="android:maxHeight">40.0dip</item>
+        <item name="android:progressDrawable">@drawable/service_consultant_ratingbar</item>
+        <item name="android:minHeight">17.0dip</item>
+    </style>
+    
+</resources>

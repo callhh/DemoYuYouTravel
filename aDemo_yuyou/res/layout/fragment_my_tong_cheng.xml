@@ -1,0 +1,503 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2f4f7"
+    tools:context="com.example.sample.fragment.MyTongChengFragment" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/bg_green_personal" />
+
+                <RelativeLayout
+                    android:id="@+id/layout_my_login"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_marginTop="50dp"
+                    android:background="#20ff6815" >
+
+                    <ImageView
+                        android:id="@+id/img_my_head_portrait"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="25dp"
+                        android:src="@drawable/discover_guide_default_round" />
+
+                    <TextView
+                        android:id="@+id/tv_my_login_toast"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:text="您还没有登录，点击登录"
+                        android:textColor="#ffffff"
+                        android:textSize="15sp" />
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="16dp"
+                        android:src="@drawable/travel_arrow_list_common_white_right" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/layout_my_qr_code"
+                    android:layout_width="70dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentRight="true" >
+
+                    <ImageView
+                        android:id="@+id/img_my_qr_code"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="16dp"
+                        android:src="@drawable/icon_navi_qrcode" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tv_my_Sign"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="32dp"
+                    android:drawableLeft="@drawable/icon_checkin_personal"
+                    android:gravity="center"
+                    android:paddingBottom="12dp"
+                    android:text="签到赚游戏币"
+                    android:textColor="#ffffff" />
+
+                <TextView
+                    android:id="@+id/tv_my_mine_news"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="53dp"
+                    android:drawableLeft="@drawable/icon_news_personal"
+                    android:gravity="center"
+                    android:paddingBottom="12dp"
+                    android:text="我的消息"
+                    android:textColor="#ffffff" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_my_all_orders"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="#ffffff" >
+
+                <ImageView
+                    android:id="@+id/img_my_all_orders"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="12dp"
+                    android:src="@drawable/icon_travel_details_servicepromise" />
+
+                <TextView
+                    android:id="@+id/tv_my_all_orders"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="16dp"
+                    android:layout_toRightOf="@+id/img_my_all_orders"
+                    android:text="全部订单" />
+
+                <ImageView
+                    android:id="@+id/tv_my_all_orders_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="16dp"
+                    android:src="@drawable/arrow_list_common_right" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.01dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:background="#c0c0c0"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_my_all_wallet"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_below="@+id/layout_my_all_orders"
+                android:layout_marginTop="10dp"
+                android:background="#ffffff" >
+
+                <RelativeLayout
+                    android:id="@+id/layout_my_wallet_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp" >
+
+                    <ImageView
+                        android:id="@+id/img_my_wallet"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="12dp"
+                        android:src="@drawable/icon_visa_detail_property" />
+
+                    <TextView
+                        android:id="@+id/tv_my_wallet"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="16dp"
+                        android:layout_toRightOf="@+id/img_my_wallet"
+                        android:text="我的钱包" />
+
+                    <ImageView
+                        android:id="@+id/img_my_wallet_fx_right"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="16dp"
+                        android:src="@drawable/arrow_list_common_right" />
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="fill_parent"
+                        android:layout_height="0.01dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:background="#c0c0c0"
+                        android:textAppearance="?android:attr/textAppearanceSmall" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/layout_my_fish_jifen"
+                    android:layout_width="90dp"
+                    android:layout_height="52dp"
+                    android:layout_below="@+id/layout_my_wallet_button" >
+
+                    <TextView
+                        android:id="@+id/tv_my_fish"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:text="鱼丸"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/tv_my_fish_jifen"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="10dp"
+                        android:text="- -"
+                        android:textColor="#c0c0c0"
+                        android:textAppearance="?android:attr/textAppearanceSmall" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/layout_yulv_baitiao_jifen"
+                    android:layout_width="90dp"
+                    android:layout_height="52dp"
+                    android:layout_below="@+id/layout_my_wallet_button"
+                    android:layout_toRightOf="@+id/layout_my_fish_jifen" >
+
+                    <TextView
+                        android:id="@+id/tv_yulv_baitiao"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:text="鱼旅白条"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/tv_yulv_baitiao_jifen"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="10dp"
+                        android:text="- -"
+                        android:textColor="#c0c0c0"
+                        android:textAppearance="?android:attr/textAppearanceSmall" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/layout_hongbao"
+                    android:layout_width="90dp"
+                    android:layout_height="52dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_toRightOf="@+id/layout_yulv_baitiao_jifen" >
+
+                    <TextView
+                        android:id="@+id/tv_mywallet_hongbao"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:text="优惠券"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/tv_mywallet_hongbao_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="10dp"
+                        android:text="- -"
+                        android:textColor="#c0c0c0"
+                        android:textAppearance="?android:attr/textAppearanceSmall" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/layout_mywallet_bonus"
+                    android:layout_width="90dp"
+                    android:layout_height="52dp"
+                    android:layout_below="@+id/layout_my_wallet_button"
+                    android:layout_toRightOf="@+id/layout_hongbao" >
+
+                    <TextView
+                        android:id="@+id/tv_mywallet_bonus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:text="奖金"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/tv_mywallet_bonus_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="10dp"
+                        android:text="- -"
+                        android:textColor="#c0c0c0"
+                        android:textAppearance="?android:attr/textAppearanceSmall" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.01dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:background="#c0c0c0"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/RelativeLayout03"
+                android:layout_width="match_parent"
+                android:layout_height="144dp"
+                android:layout_below="@+id/layout_my_all_wallet"
+                android:layout_marginTop="10dp"
+                android:background="#ffffff" >
+
+                <RelativeLayout
+                    android:id="@+id/layout_yuyou_bbs"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp" >
+
+                    <ImageView
+                        android:id="@+id/img_yuyou_bbs"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="12dp"
+                        android:src="@drawable/icon_visa_detail_invite_documented" />
+
+                    <TextView
+                        android:id="@+id/tv_yuyou_bbs"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="16dp"
+                        android:layout_toRightOf="@+id/img_yuyou_bbs"
+                        android:text="鱼游社区" />
+
+                    <ImageView
+                        android:id="@+id/img_yuyou_bbs_fx_right"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="16dp"
+                        android:src="@drawable/arrow_list_common_right" />
+
+                    <TextView
+                        android:id="@+id/TextView10"
+                        android:layout_width="fill_parent"
+                        android:layout_height="0.01dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:background="#c0c0c0"
+                        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                    <TextView
+                        android:id="@+id/tv_yuyou_bbs_fengexian_bottom"
+                        android:layout_width="310dp"
+                        android:layout_height="0.01dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerHorizontal="true"
+                        android:background="#c0c0c0" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/TextView09"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.1dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:background="#c0c0c0"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                <RelativeLayout
+                    android:id="@+id/layout_yuyou_guwen"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true" >
+
+                    <ImageView
+                        android:id="@+id/img_yuyou_guwen"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="12dp"
+                        android:src="@drawable/icon_visa_detail_assure_documented" />
+
+                    <TextView
+                        android:id="@+id/tv_yuyou_guwen"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="16dp"
+                        android:layout_toRightOf="@+id/img_yuyou_guwen"
+                        android:text="鱼游顾问" />
+
+                    <ImageView
+                        android:id="@+id/img_yuyou_guwen_fx_right"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="16dp"
+                        android:src="@drawable/arrow_list_common_right" />
+
+                    <TextView
+                        android:id="@+id/tv_yuyou_guwen_fengexian_bottom"
+                        android:layout_width="310dp"
+                        android:layout_height="0.01dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerHorizontal="true"
+                        android:background="#c0c0c0" />
+
+                    <TextView
+                        android:id="@+id/textView1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="12dp"
+                        android:layout_toLeftOf="@+id/img_yuyou_guwen_fx_right"
+                        android:text="百万年薪招募顾问"
+                        android:textColor="#c0c0c0"
+                        android:textSize="12sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/layout_yuyou_vshop"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/layout_yuyou_guwen" >
+
+                    <ImageView
+                        android:id="@+id/img_yuyou_vshop"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="12dp"
+                        android:src="@drawable/icon_visa_detail_live" />
+
+                    <TextView
+                        android:id="@+id/tv_yuyou_vshop"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="16dp"
+                        android:layout_toRightOf="@+id/img_yuyou_vshop"
+                        android:text="鱼游微店" />
+
+                    <ImageView
+                        android:id="@+id/img_yuyou_vshop_fx_right"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="16dp"
+                        android:src="@drawable/arrow_list_common_right" />
+
+                    <TextView
+                        android:id="@+id/textView5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="12dp"
+                        android:layout_toLeftOf="@+id/img_yuyou_vshop_fx_right"
+                        android:text="推荐送鱼丸、奖金"
+                        android:textColor="#c0c0c0"
+                        android:textSize="12sp"/>
+
+                </RelativeLayout>
+            </RelativeLayout>
+            <include
+            android:id="@+id/layout_four_and_five"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            layout="@layout/include_my_yuyou_setting" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

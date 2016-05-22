@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingLeft="@dimen/common_margin"
+    android:paddingRight="@dimen/common_margin" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:id="@id/ll_no_result_tag"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <View
+                android:id="@id/margin_top_view"
+                android:layout_width="0.0dip"
+                android:layout_height="0.0dip" />
+
+            <TextView
+                android:id="@id/load_tv_noresult"
+                style="@style/tv_warning_info_null_style"
+                android:drawableTop="@drawable/icon_no_result_search"
+                android:gravity="center"
+                android:text="@string/common_noresult_title"
+                android:textSize="@dimen/text_size_list" />
+
+            <TextView
+                android:id="@id/load_tv_tips"
+                style="@style/tv_warning_info_null_style"
+                android:gravity="center"
+                android:paddingTop="3.0dip"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@id/load_btn_retry"
+                style="@style/btn_err_layout_white_style"
+                android:layout_width="fill_parent"
+                android:layout_height="48.0dip"
+                android:layout_marginLeft="39.0dip"
+                android:layout_marginRight="39.0dip"
+                android:layout_marginTop="16.0dip"
+                android:text="重新搜索" />
+
+            <LinearLayout
+                android:id="@id/ll_noresult_conditions"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:paddingBottom="58.0dip"
+                android:paddingTop="12.0dip" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

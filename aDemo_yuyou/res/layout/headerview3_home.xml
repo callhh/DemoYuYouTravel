@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_twoline_common"
+    android:baselineAligned="false"
+    android:clickable="true"
+    android:descendantFocusability="afterDescendants"
+    android:focusable="true"
+    android:orientation="horizontal"
+    android:paddingLeft="5.0dip"
+    android:paddingRight="5.0dip" >
+
+    <LinearLayout
+        android:id="@+id/kl_tab1"
+        android:layout_width="0.0dip"
+        android:layout_height="42.0dip"
+        android:layout_marginBottom="6.0dip"
+        android:layout_marginLeft="8.0dip"
+        android:layout_marginRight="8.0dip"
+        android:layout_marginTop="6.0dip"
+        android:layout_weight="1.0"
+        android:background="@drawable/selector_bg_home_rec_tab"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/homepage_10dp"
+        android:paddingRight="@dimen/homepage_10dp" >
+
+        <TextView
+            android:id="@+id/tv_tab1_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:includeFontPadding="false"
+            android:paddingTop="@dimen/homepage_2dp"
+            android:singleLine="true"
+            android:text="快乐周末"
+            android:textColor="@color/home_rec_tab_title_color"
+            android:textSize="15.0sp" />
+
+        <TextView
+            android:id="@+id/tv_tab1_subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="15.0dip"
+            android:background="@drawable/selector_bg_home_rec_tab_subtitle"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:paddingLeft="6.0dip"
+            android:paddingRight="6.0dip"
+            android:singleLine="true"
+            android:text="1-2日"
+            android:textColor="@color/home_rec_tab_subtitle_color"
+            android:textSize="@dimen/text_size_xsmall" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/kl_tab2"
+        android:layout_width="0.0dip"
+        android:layout_height="42.0dip"
+        android:layout_marginBottom="6.0dip"
+        android:layout_marginLeft="8.0dip"
+        android:layout_marginRight="8.0dip"
+        android:layout_marginTop="6.0dip"
+        android:layout_weight="1.0"
+        android:background="@drawable/selector_bg_home_rec_tab"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/homepage_10dp"
+        android:paddingRight="@dimen/homepage_10dp" >
+
+        <TextView
+            android:id="@+id/tv_tab2_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:includeFontPadding="false"
+            android:paddingTop="@dimen/homepage_2dp"
+            android:singleLine="true"
+            android:text="快乐短途"
+            android:textColor="@color/home_rec_tab_title_color"
+            android:textSize="15.0sp" />
+
+        <TextView
+            android:id="@+id/tv_tab2_subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="15.0dip"
+            android:background="@drawable/selector_bg_home_rec_tab_subtitle"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:paddingLeft="6.0dip"
+            android:paddingRight="6.0dip"
+            android:singleLine="true"
+            android:text="3-5日"
+            android:textColor="@color/home_rec_tab_subtitle_color"
+            android:textSize="@dimen/text_size_xsmall" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/kl_tab3"
+        android:layout_width="0.0dip"
+        android:layout_height="42.0dip"
+        android:layout_marginBottom="6.0dip"
+        android:layout_marginLeft="8.0dip"
+        android:layout_marginRight="8.0dip"
+        android:layout_marginTop="6.0dip"
+        android:layout_weight="1.0"
+        android:background="@drawable/selector_bg_home_rec_tab"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/homepage_10dp"
+        android:paddingRight="@dimen/homepage_10dp" >
+
+        <TextView
+            android:id="@+id/tv_tab3_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:includeFontPadding="false"
+            android:paddingTop="@dimen/homepage_2dp"
+            android:singleLine="true"
+            android:text="快乐长假"
+            android:textColor="@color/home_rec_tab_title_color"
+            android:textSize="15.0sp" />
+
+        <TextView
+            android:id="@+id/tv_tab3_subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="15.0dip"
+            android:background="@drawable/selector_bg_home_rec_tab_subtitle"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:paddingLeft="6.0dip"
+            android:paddingRight="6.0dip"
+            android:singleLine="true"
+            android:text="6日以上"
+            android:textColor="@color/home_rec_tab_subtitle_color"
+            android:textSize="@dimen/text_size_xsmall" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/login_common_side_margin"
+    android:paddingRight="@dimen/login_common_side_margin" >
+
+    <LinearLayout
+        android:id="@+id/ll_login_dynamic_input_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="54.0dip"
+        android:background="@drawable/selector_bg_input"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <com.tongcheng.lib.serv.ui.view.AutoClearEditText
+            android:id="@+id/et_login_dynamic_account_input"
+            style="@style/Account.EditText.Line"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:background="@android:color/transparent"
+            android:hint="@string/account_login_mobile_input"
+            android:inputType="numberSigned"
+            android:maxLength="13" />
+
+        <TextView
+            android:id="@+id/tv_login_dynamic_code_send"
+            style="@style/Account.Button.CodeSend"
+            android:layout_marginLeft="10.0dip"
+            android:text="@string/verify_code_send" />
+    </LinearLayout>
+
+    <com.tongcheng.lib.serv.ui.view.AutoClearEditText
+        android:id="@+id/et_login_dynamic_code_input"
+        style="@style/Account.EditText.Line"
+        android:layout_marginTop="6.0dip"
+        android:hint="@string/verify_code_input"
+        android:inputType="numberSigned" />
+
+    <Button
+        android:id="@+id/btn_dynamic_login_commit"
+        style="@style/btn_orange"
+        android:layout_marginTop="@dimen/login_common_top_margin"
+        android:enabled="false"
+        android:text="@string/login" />
+
+    <TextView
+        android:id="@+id/code_receive_tip"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10.0dip"
+        android:gravity="center"
+        android:paddingBottom="6.0dip"
+        android:paddingTop="6.0dip"
+        android:textColor="@color/white_70"
+        android:textSize="@dimen/text_size_hint" />
+
+</LinearLayout>

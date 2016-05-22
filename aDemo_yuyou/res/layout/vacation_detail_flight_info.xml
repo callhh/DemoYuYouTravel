@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_twoline_common"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@id/rl_vacation_detail_comment_container"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_white_bg"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@id/tv_vacation_detail_comment_title"
+            style="@style/tv_list_primary_style"
+            android:layout_width="wrap_content"
+            android:layout_height="42dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:drawableLeft="@drawable/icon_flight_order"
+            android:drawablePadding="11.0dip"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/common_margin"
+            android:paddingRight="@dimen/common_margin"
+            android:text="@string/vacation_detail_flight_info" />
+
+        <RelativeLayout
+            android:id="@+id/layout_vacation_detail_flight_info_go"
+            android:layout_width="match_parent"
+            android:layout_height="88dp"
+            android:layout_below="@id/tv_vacation_detail_comment_title" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="18dp"
+                android:drawableLeft="@drawable/icon_indicator_gny_list_disable_go"
+                android:drawablePadding="8dp"
+                android:textSize="13sp"
+                android:text="福州-曼谷" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textView1"
+                android:layout_below="@+id/textView1"
+                android:layout_marginLeft="26dp"
+                android:layout_marginTop="8dp"
+                android:text="春秋航空9C8759"
+                android:textColor="@color/detail_vacation_tiyan_tese"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textView2"
+                android:layout_below="@+id/textView2"
+                android:layout_marginTop="3dp"
+                android:drawableRight="@drawable/line_indicator_cruise_order_rest"
+                android:drawablePadding="8dp"
+                android:text="23:55" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/textView3"
+                android:layout_alignBottom="@+id/textView3"
+                android:layout_toRightOf="@+id/textView3"
+                android:layout_marginLeft="8dp"
+                android:text="03:20" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textView3"
+                android:layout_below="@+id/textView3"
+                android:layout_marginTop="3dp"
+                android:text="长乐机场" 
+                android:textColor="@color/detail_vacation_tiyan_tese"
+                android:textSize="10sp"/>
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/textView4"
+                android:layout_below="@+id/textView3"
+                android:layout_marginTop="3dp"
+                android:textColor="@color/detail_vacation_tiyan_tese"
+                android:textSize="10sp"
+                android:text="素万纳普机场" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/RelativeLayout01"
+            android:layout_width="match_parent"
+            android:layout_height="88dp" 
+            android:layout_below="@+id/layout_vacation_detail_flight_info_go">
+
+            <TextView
+                android:id="@+id/TextView02"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="18dp"
+                android:drawableLeft="@drawable/inlandtravel_order_back"
+                android:drawablePadding="8dp"
+                android:text="曼谷-福州"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/TextView01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/TextView02"
+                android:layout_below="@+id/TextView02"
+                android:layout_marginLeft="26dp"
+                android:layout_marginTop="8dp"
+                android:text="春秋航空9C8760"
+                android:textColor="@color/detail_vacation_tiyan_tese"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/TextView06"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/TextView01"
+                android:layout_below="@+id/TextView01"
+                android:layout_marginTop="3dp"
+                android:drawablePadding="8dp"
+                android:drawableRight="@drawable/line_indicator_cruise_order_rest"
+                android:text="17:05" />
+
+            <TextView
+                android:id="@+id/TextView05"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/TextView06"
+                android:layout_alignBottom="@+id/TextView06"
+                android:layout_marginLeft="8dp"
+                android:layout_toRightOf="@+id/TextView06"
+                android:text="22:05" />
+
+            <TextView
+                android:id="@+id/TextView04"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/TextView06"
+                android:layout_below="@+id/TextView06"
+                android:layout_marginTop="3dp"
+                android:text="素万纳普机场"
+                android:textColor="@color/detail_vacation_tiyan_tese"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/TextView03"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/TextView05"
+                android:layout_below="@+id/TextView06"
+                android:layout_marginTop="3dp"
+                android:text="长乐机场"
+                android:textColor="@color/detail_vacation_tiyan_tese"
+                android:textSize="10sp" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:paddingBottom="10dp">
+
+        <TextView
+            android:id="@+id/tv_vacation_detail_flight_infos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="17dp"
+            android:layout_marginTop="10dp"
+            android:maxLines="2"
+            android:minLines="1"
+            android:text="@string/vacation_detail_flight_infos"
+            android:textColor="@color/detail_vacation_tiyan_tese" 
+            android:textSize="10sp"/>
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="wrap_content"
+            android:layout_height="0.5dp"
+            android:layout_alignParentTop="true" 
+            android:layout_marginRight="12dp"
+            android:layout_marginLeft="12dp"
+            android:background="@color/main_line"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

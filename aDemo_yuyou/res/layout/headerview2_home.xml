@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="#f2f4f7">
+
+    <RelativeLayout
+        android:id="@+id/layout_home_lbs_my_shenbian"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="12dp"
+        android:background="#ffffff"
+        android:padding="14dp" >
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_home_woshenbian_lbs" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="12dp"
+            android:layout_toRightOf="@+id/imageView3"
+            android:text="我身边"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView12"
+            android:layout_alignParentBottom="true"
+            android:text="附近景点、酒店、玩乐"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#c0c0c0"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/arrow_list_common_right" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_home_theme_activity"
+        android:layout_width="match_parent"
+        android:layout_height="196dp"
+        android:layout_marginTop="12dp"
+        android:background="#ffffff"
+        android:layout_below="@+id/layout_home_lbs_my_shenbian"
+        android:visibility="visible" >
+
+        <RelativeLayout
+            android:id="@+id/layout_home_activity_theme1"
+            android:layout_width="174dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="4dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="4dp"
+            android:background="#f7f7f7" >
+
+            <TextView
+                android:id="@+id/tv_home_activity_theme1_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="8dp"
+                android:text="春游特惠"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#bb6f61"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_home_activity_theme1_subtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/tv_home_activity_theme1_title"
+                android:layout_below="@+id/tv_home_activity_theme1_title"
+                android:text="赏花3折起"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/img_home_activity_theme1"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="16dp"
+                android:src="@drawable/ic_launcher" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_home_activity_theme2"
+            android:layout_width="174dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/layout_home_activity_theme1"
+            android:layout_marginRight="4dp"
+            android:background="#f7f7f7" >
+
+            <TextView
+                android:id="@+id/tv_home_activity_theme2_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="8dp"
+                android:text="同程专线"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#48d6d5"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_home_activity_theme2_subtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/tv_home_activity_theme2_title"
+                android:layout_below="@+id/tv_home_activity_theme2_title"
+                android:text="品质游之选"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/img_home_activity_theme2"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="16dp"
+                android:src="@drawable/ic_launcher" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_home_activity_theme3"
+            android:layout_width="174dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/layout_home_activity_theme1"
+            android:layout_marginBottom="4dp"
+            android:layout_marginLeft="4dp"
+            android:background="#f7f7f7" >
+
+            <TextView
+                android:id="@+id/tv_home_activity_theme3_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="8dp"
+                android:text="有票专享"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#fe9e1a"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_home_activity_theme3_subtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/tv_home_activity_theme3_title"
+                android:layout_below="@+id/tv_home_activity_theme3_title"
+                android:text="同程优选票"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/img_home_activity_theme3"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="16dp"
+                android:src="@drawable/ic_launcher" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_home_activity_theme4"
+            android:layout_width="174dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/layout_home_activity_theme3"
+            android:layout_marginRight="4dp"
+            android:background="#f7f7f7" >
+
+            <TextView
+                android:id="@+id/tv_home_activity_theme4_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="8dp"
+                android:text="超级玩咖"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#3d94f3"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_home_activity_theme4_subtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/tv_home_activity_theme4_title"
+                android:layout_below="@+id/tv_home_activity_theme4_title"
+                android:text="品质游之选"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/img_home_activity_theme4"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="16dp"
+                android:src="@drawable/ic_launcher" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_home_theme_activity_10yuan"
+            android:layout_width="85dp"
+            android:layout_height="80dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/layout_home_activity_theme3"
+            android:layout_marginBottom="4dp"
+            android:layout_marginLeft="4dp"
+            android:background="#f7f7f7" >
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="52dp"
+                android:layout_height="52dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="2dp"
+                android:src="@drawable/ic_home_temai_10yuan_trip" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageView1"
+                android:layout_centerHorizontal="true"
+                android:textSize="15sp"
+                android:text="十元度周末" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_home_theme_activity_100yuan"
+            android:layout_width="85dp"
+            android:layout_height="80dp"
+            android:layout_alignTop="@+id/layout_home_theme_activity_10yuan"
+            android:layout_marginLeft="4dp"
+            android:layout_toRightOf="@+id/layout_home_theme_activity_10yuan"
+            android:background="#f7f7f7" >
+            
+             <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="52dp"
+                android:layout_height="52dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="2dp"
+                android:src="@drawable/ic_home_temai_100yuan_trip" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageView2"
+                android:layout_centerHorizontal="true"
+                android:textSize="15sp"
+                android:text="百元玩中国" />
+            
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_home_theme_activity_temai_quanqiu"
+            android:layout_width="85dp"
+            android:layout_height="80dp"
+            android:layout_alignLeft="@+id/layout_home_activity_theme4"
+            android:layout_alignTop="@+id/layout_home_theme_activity_100yuan"
+            android:background="#f7f7f7" >
+
+             <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="52dp"
+                android:layout_height="52dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="2dp"
+                android:src="@drawable/ic_home_temai_allworld" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageView5"
+                android:layout_centerHorizontal="true"
+                android:textSize="15sp"
+                android:text="特卖全球" />
+            
+        </RelativeLayout>
+        
+        <RelativeLayout
+            android:id="@+id/layout_home_theme_activity_temai_youlun"
+            android:layout_width="85dp"
+            android:layout_height="80dp"
+            android:layout_alignTop="@+id/layout_home_theme_activity_temai_quanqiu"
+            android:layout_marginLeft="4dp"
+            android:layout_toRightOf="@+id/layout_home_theme_activity_temai_quanqiu"
+            android:background="#f7f7f7" >
+            
+             <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="52dp"
+                android:layout_height="52dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="2dp"
+                android:src="@drawable/ic_home_temai_youlun" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageView6"
+                android:layout_centerHorizontal="true"
+                android:textSize="15sp"
+                android:text="邮轮特卖" />
+            
+        </RelativeLayout>
+        
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/layout_home_theme_activity"
+        android:background="#eaedf1"
+        android:visibility="visible" >
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="#c0c0c0"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <TextView
+            android:id="@+id/textView19"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="#c0c0c0"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <TextView
+            android:id="@+id/textView20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="为您精选"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#c0c0c0"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="40dp"
+            android:layout_height="0.2dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="21dp"
+            android:layout_toLeftOf="@+id/textView20"
+            android:background="#c0c0c0"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                <TextView
+            android:id="@+id/textView2"
+            android:layout_width="40dp"
+            android:layout_height="0.2dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="21dp"
+            android:layout_toRightOf="@+id/textView20"
+            android:background="#c0c0c0"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+                
+    </RelativeLayout>
+
+</RelativeLayout>

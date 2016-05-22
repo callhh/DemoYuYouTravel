@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/ll_vacation_detail_recommendar_container"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/vacation_common_cell_margin"
+    android:background="@drawable/bg_twoline_common"
+    android:orientation="vertical"
+    android:visibility="visible" >
+
+    <RelativeLayout
+        android:id="@id/rl_vacation_detail_consultant"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            style="@style/tv_list_primary_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/icon_details_onlineservice"
+            android:drawablePadding="11.0dip"
+            android:gravity="center_vertical"
+            android:paddingBottom="@dimen/content_space"
+            android:paddingLeft="@dimen/common_margin"
+            android:paddingRight="@dimen/common_margin"
+            android:paddingTop="@dimen/content_space"
+            android:text="@string/vacation_detail_consultant"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@id/tv_vacation_contact_consultant"
+            style="@style/tv_hint_secondary_style"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/common_margin"
+            android:background="@drawable/vacation_contact_consultant_selector"
+            android:paddingBottom="7.0dip"
+            android:paddingLeft="13.0dip"
+            android:paddingRight="13.0dip"
+            android:paddingTop="7.0dip"
+            android:text="@string/vacation_contact_consultant" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@id/tv_vacation_detail_recommander"
+        style="@style/tv_list_primary_style"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/icon_details_thumb"
+        android:drawablePadding="11.0dip"
+        android:gravity="center_vertical"
+        android:paddingBottom="@dimen/content_space"
+        android:paddingLeft="@dimen/common_margin"
+        android:paddingRight="@dimen/common_margin"
+        android:paddingTop="@dimen/content_space"
+        android:text="@string/vacation_detail_tab_recommend"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@id/rl_vacation_consultant_container"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/content_space" >
+
+        <RelativeLayout
+            android:id="@id/rl_vacation_consultant_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="@dimen/content_space"
+            android:layout_marginLeft="@dimen/common_margin"
+            android:layout_marginRight="@dimen/common_margin" >
+
+<!--             <com.tongcheng.lib.serv.ui.view.roundedimage.RoundedImageView -->
+            <ImageView
+                android:id="@id/iv_vacation_consultant_header"
+                android:layout_width="55.0dip"
+                android:layout_height="55.0dip"
+                android:scaleType="fitXY" />
+            <!-- rounded:mutate_background="true" -->
+            <!-- rounded:oval="true" -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_vacation_consultant_header"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="-10.0dip"
+                android:background="@drawable/consultant_round"
+                android:paddingBottom="0.5dip"
+                android:paddingTop="0.5dip"
+                android:text="@string/vacation_detail_my_consultant"
+                android:textColor="@color/white"
+                android:textSize="8.0sp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/rl_vacation_consultant_header"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/rl_vacation_consultant_header"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/tv_hint_hint_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="5"
+                    android:text="@string/vacation_detail_nick_name" />
+
+                <TextView
+                    android:id="@id/tv_vacation_consultant_name"
+                    style="@style/tv_hint_primary_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/common_margin"
+                    android:drawablePadding="@dimen/content_space"
+                    android:ellipsize="end"
+                    android:maxLines="1" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1.0dip" >
+
+                <TextView
+                    android:id="@id/tv_vacation_consultant_score"
+                    style="@style/tv_hint_hint_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:ems="5"
+                    android:text="@string/vacation_detail_consultant_score" />
+
+                <RatingBar
+                    android:id="@id/rb_vacation_consultant_star"
+                    style="@style/consultantRatingBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/tv_vacation_consultant_score"
+                    android:isIndicator="true" />
+
+                <TextView
+                    android:id="@id/tv_vacation_consultant_star_score"
+                    style="@style/tv_hint_orange_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5.0dip"
+                    android:layout_toRightOf="@id/rb_vacation_consultant_star"
+                    android:textColor="@color/main_orange" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1.0dip"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/tv_hint_hint_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="5"
+                    android:text="@string/vacation_detail_good_line" />
+
+                <TextView
+                    android:id="@id/tv_vacation_consultant_introduction"
+                    style="@style/tv_hint_primary_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/common_margin"
+                    android:ellipsize="end"
+                    android:lineSpacingExtra="6.0dip"
+                    android:singleLine="true" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@id/tv_vacation_detail_recommand"
+        style="@style/tv_info_secondary_style"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:lineSpacingMultiplier="1.2"
+        android:paddingBottom="@dimen/common_margin"
+        android:paddingLeft="@dimen/common_margin"
+        android:paddingRight="@dimen/common_margin"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@id/tv_vacation_detail_feature_more"
+        style="@style/tv_info_primary_style"
+        android:layout_width="fill_parent"
+        android:layout_height="48.0dip"
+        android:background="@drawable/selector_cell_up_line"
+        android:drawableRight="@drawable/arrow_list_common"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/common_margin"
+        android:paddingRight="@dimen/common_margin"
+        android:text="@string/vacation_detail_feature_more" />
+
+</LinearLayout>
